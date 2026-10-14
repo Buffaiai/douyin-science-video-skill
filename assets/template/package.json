@@ -1,0 +1,19 @@
+{
+  "name": "__TOPIC__-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render": "remotion render src/index.ts __COMP_ID__ out/raw.mp4 --crf=15 --jpeg-quality=100",
+    "still": "remotion still src/index.ts __COMP_ID__ out/f.jpg --image-format=jpeg --log=error"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.356",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.356"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.5.0"
+  }
+}
